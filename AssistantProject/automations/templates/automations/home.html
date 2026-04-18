@@ -1,0 +1,27 @@
+{% extends 'tasks/base.html' %}
+
+{% block content %}
+<style>
+    /* Ensure paragraphs and sub-headings flip to white in dark mode */
+    body.dark-mode p,
+    body.dark-mode .sub-heading {
+        color: rgba(255, 255, 255, 0.85) !important;
+    }
+</style>
+
+<div class="row mb-4 mt-2">
+    <div class="col-12" style="padding-left: 20px;">
+        <p class="sub-heading" style="opacity: 0.6; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 4px;">Assistant System</p>
+        <h2 style="font-weight: 800; letter-spacing: -1.2px; font-size: 34px;">Automations</h2>
+    </div>
+</div>
+
+<div class="row justify-content-center align-items-center" style="min-height: 50vh;">
+    <div class="col-12 text-center">
+        <div class="apple-card p-5 mx-auto" style="max-width: 600px; border: 1px solid rgba(128,128,128,0.2); background: transparent;">
+            <h3 style="font-weight: 800; letter-spacing: -0.5px; margin-bottom: 15px;">Sorry, {{ user.username|title }}, still working on this page.</h3>
+            <p style="opacity: 0.6; font-weight: 500; font-size: 16px; margin: 0;">This is where your background scripts and scrapers will live.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
